@@ -3,35 +3,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Motor Spare Parts Catalog</title>
+  <title>Shop - RA Motor Spare Parts</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; background: #f4f4f4; }
-    h1 { text-align: center; color: #333; }
-    .catalog { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; }
-    .item { background: #fff; padding: 10px; border-radius: 10px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    .item img { width: 100%; height: 120px; object-fit: cover; border-radius: 10px; }
-    .item h3 { margin: 10px 0 5px; font-size: 16px; }
-    .item p { color: #555; margin: 0; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+
+    nav a:hover {
+      background: #ff6600;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #ff6600;
+    }
+
+    .product {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+    }
+
+    .product img {
+      width: 120px;
+      border-radius: 8px;
+    }
+
+    .product button {
+      background: #ff6600;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .product button:hover {
+      background: #e65c00;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #000;
+      color: #fff;
+    }
   </style>
 </head>
 <body>
-  <h1>Motor Spare Parts Catalog</h1>
-  <div class="catalog">
-    <div class="item">
-      <img src="https://via.placeholder.com/150" alt="Brake Pad">
-      <h3>Brake Pad</h3>
-      <p>₦ 8,000</p>
+  <header>
+    <h1>RA Motor Shop</h1>
+    <p>Order your spare parts here</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h2>Available Spare Parts</h2>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1610367327956-4c8326b2f3d1?auto=format&fit=crop&w=600&q=60" alt="Battery">
+      <div>
+        <h3>Car Battery</h3>
+        <p>Durable 12V battery — 45,000 FCFA</p>
+      </div>
+      <a href="https://wa.me/23788227738?text=I%20want%20to%20order%20a%20Car%20Battery%20from%20RA%20Motor">
+        <button>Order via WhatsApp</button>
+      </a>
     </div>
-    <div class="item">
-      <img src="https://via.placeholder.com/150" alt="Oil Filter">
-      <h3>Oil Filter</h3>
-      <p>₦ 3,500</p>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1621396544772-56cbb4bfb506?auto=format&fit=crop&w=600&q=60" alt="Brake Pads">
+      <div>
+        <h3>Brake Pads</h3>
+        <p>High performance brake pads — 25,000 FCFA</p>
+      </div>
+      <a href="https://wa.me/23788227738?text=I%20want%20to%20order%20Brake%20Pads%20from%20RA%20Motor">
+        <button>Order via WhatsApp</button>
+      </a>
     </div>
-    <div class="item">
-      <img src="https://via.placeholder.com/150" alt="Spark Plug">
-      <h3>Spark Plug</h3>
-      <p>₦ 2,000</p>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1604840567634-cb82667d66d1?auto=format&fit=crop&w=600&q=60" alt="Engine Part">
+      <div>
+        <h3>Engine Part</h3>
+        <p>Original engine component — 90,000 FCFA</p>
+      </div>
+      <a href="https://wa.me/23788227738?text=I%20want%20to%20order%20Engine%20Part%20from%20RA%20Motor">
+        <button>Order via WhatsApp</button>
+      </a>
     </div>
   </div>
+
+  <footer>
+    <p>© 2025 RA Motor Spare Parts | All Rights Reserved</p>
+  </footer>
 </body>
 </html>
